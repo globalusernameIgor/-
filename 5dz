@@ -1,0 +1,21 @@
+// задайте массив заполненный случайными положительными трехзначными числами. напишите программу, которая покажет количество четных и нечетчных чисел в массив // [345, 897,568,234] ->
+
+Консоль.Write(«Введите количество элементов массива: «); int a = Convert.ToInt32(консоль.ReadLine()); int[] randomArray = новый int[a];
+
+аннулировать mas(int a) { for (int i = 0; i < a; i++) { randomArray[i] = new Random().Next(99,999); Консоль.Записать (randomArray[i] + » «); }
+
+}
+
+int kol(int[] randomArray) { int kol = 0; for (int i = 0; i < случайный массив.Длине; i++) { if (randomArray[i] % 2 == 0) kol = kol + 1; } возвращает kol; }
+
+// Задайте одномерный массив, заполненный случайными числами.Найдите сумму элементов , стоящих на нечетных индексах. // [3, 7,23,12] -> // [-4, -6 ,89, 6] -> 0
+
+Консоль.Write(«Введите количество элементов массива: «); int a = Convert.ToInt32(консоль.ReadLine()); int[] randomArray = новый int[a];
+
+аннулировать mas(int a) { for (int i = 0; i < a; i++) { randomArray[i] = new Random().Next(1,9); Консоль.Записать (randomArray[i] + » «); }
+
+}
+
+int kol(int[] randomArray) { int sum = 0; int i = 0; while (i < случайный массив.Длина) { sum = sum + randomArray[i]; i = i + 2; } возвращает сумму; }
+
+mas(a); Консоль.Write($»\nCумма элементов, стоящих на нечётных позициях: {kol(randomArray)}»); mas(a); Console.Write($»\nКоличество чётных чисел в массиве: {kol(randomArray)}»);
